@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "e5314f0c-ee86-49bd-9ec5-fd82ade23f90",
+		"name": "testCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/movies/create?title=terminator 2&description=In this sequel set eleven years after \"The Terminator,\" young John Connor (Edward Furlong), the key to civilization's victory over a future robot uprising, is the target of the shape-shifting T-1000 &shortDescription=nator sent from the future to kill&duration=2:36&releaseDate=December 12, 1991&imageCover=https://i.ytimg.com/vi/rmmF11TKueA/maxresdefault.jpg&imagePoster=https://m.media-amazon.com/images/M/MV5BMGU2NzRmZjUtOGUxYS00ZjdjLWEwZWItY2NlM2JhNjkxNTFmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg&genre=Fantasy/Mystery",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"movies",
+						"create"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "terminator 2"
+						},
+						{
+							"key": "description",
+							"value": "In this sequel set eleven years after \"The Terminator,\" young John Connor (Edward Furlong), the key to civilization's victory over a future robot uprising, is the target of the shape-shifting T-1000 "
+						},
+						{
+							"key": "shortDescription",
+							"value": "nator sent from the future to kill"
+						},
+						{
+							"key": "duration",
+							"value": "2:36"
+						},
+						{
+							"key": "releaseDate",
+							"value": "December 12, 1991"
+						},
+						{
+							"key": "imageCover",
+							"value": "https://i.ytimg.com/vi/rmmF11TKueA/maxresdefault.jpg"
+						},
+						{
+							"key": "imagePoster",
+							"value": "https://m.media-amazon.com/images/M/MV5BMGU2NzRmZjUtOGUxYS00ZjdjLWEwZWItY2NlM2JhNjkxNTFmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"
+						},
+						{
+							"key": "genre",
+							"value": "Fantasy/Mystery"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/movies/5d9e235802d6a91dd02eddb8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"movies",
+						"5d9e235802d6a91dd02eddb8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pagination",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/movies/3/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"movies",
+						"3",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/movies/5d9e235802d6a91dd02eddb8/update?title=terminator 3&description=In this sequel set eleven years after \"The Terminator,\" young John Connor (Edward Furlong), the key to civilization's victory over a future robot uprising, is the target of the shape-shifting T-1000 &shortDescription=nator sent from the future to kill&duration=2:36&releaseDate=December 12, 1991&imageCover=https://i.ytimg.com/vi/rmmF11TKueA/maxresdefault.jpg&imagePoster=https://m.media-amazon.com/images/M/MV5BMGU2NzRmZjUtOGUxYS00ZjdjLWEwZWItY2NlM2JhNjkxNTFmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg&genre=Fantasy/Mystery",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"movies",
+						"5d9e235802d6a91dd02eddb8",
+						"update"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "terminator 3"
+						},
+						{
+							"key": "description",
+							"value": "In this sequel set eleven years after \"The Terminator,\" young John Connor (Edward Furlong), the key to civilization's victory over a future robot uprising, is the target of the shape-shifting T-1000 "
+						},
+						{
+							"key": "shortDescription",
+							"value": "nator sent from the future to kill"
+						},
+						{
+							"key": "duration",
+							"value": "2:36"
+						},
+						{
+							"key": "releaseDate",
+							"value": "December 12, 1991"
+						},
+						{
+							"key": "imageCover",
+							"value": "https://i.ytimg.com/vi/rmmF11TKueA/maxresdefault.jpg"
+						},
+						{
+							"key": "imagePoster",
+							"value": "https://m.media-amazon.com/images/M/MV5BMGU2NzRmZjUtOGUxYS00ZjdjLWEwZWItY2NlM2JhNjkxNTFmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"
+						},
+						{
+							"key": "genre",
+							"value": "Fantasy/Mystery"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/movies/5d9e235802d6a91dd02eddb8/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"movies",
+						"5d9e235802d6a91dd02eddb8",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
