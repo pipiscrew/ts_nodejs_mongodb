@@ -1,0 +1,24 @@
+Good:
+Following MVC
+Postman collection file included
+Routes in routes file
+Correct HTTP verbs
+
+Bad:
+SonarQube analysis: 1 code smell for unnecessarily repeated code
+POST and PUT data being sent in the queryString instead of in the body ***
+2 attributes for the image instead of an object attribute, as requested in the assignment.
+No types used, no TypeScript features used.
+Code is not object oriented
+No input validation
+Incorrect HTTP Codes (503 for not found?)
+Wrong naming convention for endpoints according to RESTFul standards. Instead of /movies endpoints accessible by several HTTP verbs, there’s 1 endpoint called /create, another called /update, etc. The action should not be in the name of the endpoint.
+Code uses old javascript features (var) instead of the newest ones (let, const)
+Using callbacks
+Only 2 commit messages. Cannot evaluate so well the thought process and how the project was built.
+Configuration done in the same file as the server initialization.
+No tests
+Not using a logger
+Not using Swagger to document the endpoints
+Not using Docker
+No command to populate the DB
